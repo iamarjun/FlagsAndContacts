@@ -13,6 +13,7 @@ interface APIService {
     val theWorldPopulation: Single<Root>
 
     companion object {
+
         fun create(): APIService {
 
             val retrofit = Retrofit.Builder()
