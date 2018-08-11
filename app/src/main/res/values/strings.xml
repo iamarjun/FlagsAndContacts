@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FlagsAndContacts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_link">Don\'t have an account? Sign up</string>
+    <string name="login_link">Have an account? Log in</string>
+    <string name="btn_flag">Flags</string>
+    <string name="btn_contact">Contacts</string>
+
+</resources>
