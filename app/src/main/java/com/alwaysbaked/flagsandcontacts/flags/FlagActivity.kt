@@ -73,7 +73,7 @@ class FlagActivity : AppCompatActivity() {
     private fun injectDependency() {
         Log.d(TAG, "injectDependency: started.")
 
-        val  netComponent = DaggerNetComponent
+        val netComponent = DaggerNetComponent
                 .builder()
                 .netModule(NetModule())
                 .build()

@@ -31,10 +31,16 @@ class LoginActivity : AppCompatActivity() {
             if (!prefUsername.equals(username) && !prefPassword.equals(password)) {
                 if (username.isEmpty() || password.isEmpty())
                     Toast.makeText(this, "Username or Password cannot be empty", Toast.LENGTH_SHORT).show()
-                else
-                    Toast.makeText(this, "Please Sign Up First ", Toast.LENGTH_SHORT).show()
 
-            } else if (prefUsername.equals(username) && prefPassword.equals(password)) {
+                else
+                    Toast.makeText(this, "Please Sign Up First", Toast.LENGTH_SHORT).show()
+
+            }
+
+            else if (!prefUsername.equals(username) || !prefPassword.equals(password))
+                Toast.makeText(this, "Wrong Username or Password", Toast.LENGTH_SHORT).show()
+
+            else if (prefUsername.equals(username) && prefPassword.equals(password)) {
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
                 switchToSwitchActivity()
             }
